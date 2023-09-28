@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:text="ID:" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:ems="10"
+        android:layout_toRightOf="@id/tv_id"/>
+
+    <TextView
+        android:id="@+id/tv_fullname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edt_id"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Full name:" />
+
+    <EditText
+        android:id="@+id/edt_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_id"
+        android:ems="10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_toRightOf="@id/tv_fullname"/>
+
+    <TextView
+        android:id="@+id/tv_checkmanager"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_basex2"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/edt_fullname"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Is a manager:" />
+
+    <CheckBox
+        android:id="@+id/cb_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_checkmanager"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@id/edt_fullname"/>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_manager"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="ADD" />
+
+    <ListView  android:id="@+id/lv_employee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add">
+    </ListView>
+
+
+</RelativeLayout>

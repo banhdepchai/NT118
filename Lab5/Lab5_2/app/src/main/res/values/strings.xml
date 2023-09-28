@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab5_2</string>
+    <string name="power_conneted">Power connected</string>
+    <string name="power_disconnected">Power disconnected</string>
+</resources>
